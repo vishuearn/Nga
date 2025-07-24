@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0">
-  <title></title>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      padding-top: 100px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>.</title>
   <script>
     // List of WhatsApp numbers
     const numbers = [
-      "919827315495",
-      "919016062387",
-      "919510266048",
-      "917091999617",
-      "918302616804",
-      "916391665069",
-      "919094376677"
+      "+918938906758",
+      "+919679372914",
+      "+916299179509",
+      "+918797026290",
+      "+919241177372",
+      "+918885992885",
+      "+919127115167",
+      "+919329343500",
+      "+917091344935",
+      "+919917714645",
+      "+919116958357",
+      "+918293315977"
     ];
 
-    // Pick a random number
-    const randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
-
-    // Redirect to WhatsApp
-    // window.location.href = "https://wa.me/" + randomNumber;
-    window.location.href = "https://t.me/+Q95coR2CNEE0ZmQ1";
+    // Function to pick a random number and redirect
+    window.onload = function () {
+      const randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
+      const whatsappURL = "https://wa.me/" + randomNumber.replace("+", "");
+      window.location.href = whatsappURL;
+    };
   </script>
 </head>
 <body>
+
 </body>
 </html>
