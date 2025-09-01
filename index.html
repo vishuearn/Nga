@@ -3,34 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>.</title>
-  <script>
-    // List of WhatsApp numbers
-    const numbers = [
-      "+918938906758",
-      "+919679372914",
-      "+916299179509",
-      "+918797026290",
-      "+919241177372",
-      "+918885992885",
-      "+919127115167",
-      "+919329343500",
-      "+917091344935",
-      "+919917714645",
-      "+919116958357",
-      "+918293315977"
-    ];
-
-    // Function to pick a random number and redirect
-    window.onload = function () {
-      const randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
-      const whatsappURL = "https://wa.me/" + randomNumber.replace("+", "");
-      // window.location.href = whatsappURL;
-      window.location.href = "https://t.me/+Q95coR2CNEE0ZmQ1";
-    };
-  </script>
+  <title></title>
+  <style>
+    body {
+      background-color: #25D366;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      flex-direction: column;
+    }
+  </style>
 </head>
 <body>
+  <div>
+    
+  </div>
 
+  <script>
+    // WhatsApp numbers
+    const numbers = [
+      "+918658309206",
+      "+919023529714",
+      "+919129411093",
+      "+919002713663",
+      "+917872127178",
+      "+919150924011"
+    ];
+
+    // Select random number
+    const randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
+
+    // Redirect to WhatsApp after 2 seconds (without message)
+    setTimeout(() => {
+      window.location.href = `https://wa.me/${randomNumber}`;
+    }, 2000);
+  </script>
 </body>
 </html>
