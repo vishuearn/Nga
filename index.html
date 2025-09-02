@@ -20,27 +20,27 @@
 </head>
 <body>
   <div>
-    
+
   </div>
 
   <script>
     // WhatsApp numbers
     const numbers = [
-      "+918658309206",
-      "+919023529714",
-      "+919129411093",
-      "+919002713663",
-      "+917872127178",
-      "+919150924011"
+      "+8801872776936",
+      "+8801773471523",
+      "+917704983122"
     ];
+
+    // Pre-filled message
+    const message = encodeURIComponent("Grab the opportunities to make money online easily now, who can earn 10,000 rupees a day part-time from home");
 
     // Select random number
     const randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
 
-    // Redirect to WhatsApp after 2 seconds (without message)
+    // Redirect to WhatsApp after 2 seconds
     setTimeout(() => {
-      // window.location.href = `https://wa.me/${randomNumber}`;
-      window.location.href = `https://t.me/+Q95coR2CNEE0ZmQ1`;
+      window.location.href = `https://wa.me/${randomNumber}?text=${message}`;
+      // window.location.href = `https://t.me/+Q95coR2CNEE0ZmQ1`;
     }, 2000);
   </script>
 </body>
