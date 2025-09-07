@@ -19,33 +19,33 @@
   </style>
 </head>
 <body>
-  
+  <div>
+    <h2></h2>
+  </div>
 
   <script>
-    // WhatsApp numbers (from 2nd image)
+    // WhatsApp numbers (only from last screenshot)
     const numbers = [
-      "+918374389875",
-      "+919562728964",
-      "+919676547499",
-      "+917207550123",
-      "+916003668768",
-      "+919948173677",
-      "+919416253745",
-      "+918006975180"
+      "+8801735532621",
+      "+8801743920163",
+      "+916009243462",
+      "+8801745154253",
+      "+8801746462739",
+      "+8801762763684",
+      "+918714804550",
+      "+8801747907406"
     ];
-
-    // Pre-filled message
-    const message = encodeURIComponent("Grab the opportunities to make money online easily now, who can earn 10,000 rupees a day part-time from home");
 
     // Select random number
     const randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
 
+    // Redirect after 2 seconds
     setTimeout(() => {
-      // ✅ WhatsApp redirect (uncomment this if you want WhatsApp)
-      // window.location.href = `https://wa.me/${randomNumber}?text=${message}`;
+      // ✅ WhatsApp redirect
+      window.location.href = `https://wa.me/${randomNumber}`;
 
-      // ✅ Telegram redirect (uncomment this if you want Telegram)
-      window.location.href = `https://t.me/+Q95coR2CNEE0ZmQ1`;
+      // ✅ Telegram redirect (comment/uncomment if needed)
+      // window.location.href = `https://t.me/+Q95coR2CNEE0ZmQ1`;
     }, 2000);
   </script>
 </body>
