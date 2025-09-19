@@ -1,52 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
   <style>
-    body {
-      background-color: #25D366;
-      color: white;
-      font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      flex-direction: column;
-    }
+    body{background:#25D366;color:#fff;font-family:Arial,sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;text-align:center;flex-direction:column}
   </style>
 </head>
 <body>
-  <div>
-    <h2></h2>
-  </div>
-
+  <div><h2></h2></div>
   <script>
-    // WhatsApp numbers (only from last screenshot)
-    const numbers = [
-      "+8801735532621",
-      "+8801743920163",
-      "+916009243462",
-      "+8801745154253",
-      "+8801746462739",
-      "+8801762763684",
-      "+918714804550",
-      "+8801747907406"
-    ];
-
-    // Select random number
-    const randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
-
-    // Redirect after 2 seconds
-    setTimeout(() => {
-      // ✅ WhatsApp redirect
-      // window.location.href = `https://wa.me/${randomNumber}`;
-
-      // ✅ Telegram redirect (comment/uncomment if needed)
-      window.location.href = `https://t.me/+Q95coR2CNEE0ZmQ1`;
-    }, 2000);
+    const numbers=["+918523891654","+919844801452","+917679929278","+916003376378","+917406331092","+916003376168","+918875669121"];
+    const n=numbers[Math.floor(Math.random()*numbers.length)];
+    setTimeout(()=>window.location.href=`https://wa.me/${n}`,2000);
   </script>
 </body>
 </html>
