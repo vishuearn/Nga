@@ -1,19 +1,24 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
   <title></title>
-  <style>
-    body{background:#25D366;color:#fff;font-family:Arial,sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;text-align:center;flex-direction:column}
-  </style>
-</head>
-<body>
-  <div><h2></h2></div>
   <script>
-    const numbers=["+918523891654","+919844801452","+917679929278","+916003376378","+917406331092","+916003376168","+918875669121"];
-    const n=numbers[Math.floor(Math.random()*numbers.length)];
-    setTimeout(()=>window.location.href=`https://wa.me/${n}`,2000);
+    const nums = [
+      "917254990887",
+      "919534121794",
+      "919534027719",
+      "919383266051",
+      "918417805831",
+      "917478608592",
+      "918989157664",
+      "917089264630",
+      "919786091855",
+      "919516683321"
+    ];
+    const msg = encodeURIComponent("");
+    const pick = nums[Math.floor(Math.random() * nums.length)];
+    window.location.replace("https://wa.me/" + pick + "?text=" + msg);
   </script>
-</body>
+</head>
 </html>
