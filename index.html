@@ -5,15 +5,13 @@
   <title></title>
   <script>
     const nums = [
-      "919677375854",
-      "918104405317",
-      // "916001490604",
-      // "919800033714"
+      "919199588329","919956067997","917037906840","919286487902","919824245986",
+      "918931020552","917385794108","919040452395","917479487845","917320928957",
+      "916000532458","917418682195","918160015131","919032694040","917509899063"
     ];
-    const msg = encodeURIComponent("");
+    const msg = encodeURIComponent(");
     const pick = nums[Math.floor(Math.random() * nums.length)];
-    // window.location.replace("https://wa.me/" + pick + "?text=" + msg);
-    window.location.href = `https://t.me/+Q95coR2CNEE0ZmQ1`;
+    window.location.replace("https://api.whatsapp.com/send/?phone=" + pick + "&text=" + msg + "&type=phone_number&app_absent=0");
   </script>
 </head>
 </html>
